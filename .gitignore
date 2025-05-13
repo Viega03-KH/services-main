@@ -1,0 +1,41 @@
+# Virtual environment (keraksiz, har kimda har xil bo‘ladi)
+venv/
+ENV/
+env/
+
+# Python compile va cache fayllari
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django migration fayllari (bazaga bog‘liq bo‘lishi mumkin)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# Django migrations (faqat fayllarni ignor qilish, lekin katalog qoladi)
+*/migrations/*
+!*/migrations/__init__.py
+!*/migrations/0001_initial.py
+
+# SQLite baza fayli (agar PostgreSQL/MySQL ishlatayotgan bo‘lsangiz)
+*.sqlite3
+
+# Django static va media fayllari (serverda yaratiladi)
+static-files/
+media/
+
+# IDE va muharrir fayllari (har kimniki har xil bo‘ladi)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log va vaqtinchalik fayllar
+*.log
+*.bak
+*.tmp
+
+# Docker, venv va container ma'lumotlari
+*.env
+docker-compose.override.yml
